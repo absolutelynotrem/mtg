@@ -1,6 +1,8 @@
 #pragma once
 
-#include "../Components/ECS.hpp"
+#include "../pch.hpp"
+
+using EntityID = uint32_t;
 
 class Entity {
 private:

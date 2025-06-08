@@ -2,12 +2,10 @@
 
 #include "../../pch.hpp"
 #include "../../GameError/GameError.hpp"
-#include "../Component.hpp"
 
 using health_number_t = uint8_t;
 
 namespace Components {
-
 class Health {
 // members
 private:
@@ -30,5 +28,4 @@ private:
 	bool AmountExceedsMaxHealth(health_number_t p_Number) const;
 	bool WillSubstractionOverflow(health_number_t p_HealthAmount) const;
 };
-
 }

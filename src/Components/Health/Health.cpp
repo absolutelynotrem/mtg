@@ -2,7 +2,8 @@
 #include <limits>
 
 Components::Health::Health(health_number_t p_MaxHealth)
-	: m_MaxHealthCounter(p_MaxHealth)
+	: m_MaxHealthCounter(p_MaxHealth),
+	  m_HealthCounter(p_MaxHealth)
 {}
 
 health_number_t Components::Health::GetHealthCount() const {

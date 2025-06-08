@@ -18,5 +18,7 @@ enum class GameError {
 	HealthUnderflow
 };
 
+// instead of throwing errors, id like to use std::expected
+// in a way that is similar to rust's Option type
 using EmptyPossibleError = std::expected<void, GameError>;
 #define NoError {}
